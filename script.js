@@ -220,7 +220,7 @@ function checkout() {
 
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     const items = cart.map(item => `${item.quantity}x ${item.name}`).join(', ');
-    const whatsappNumber = '+5493813011689';
+    const whatsappNumber = '+5493815860040';
     const message = `✅ *¡COMPRA REALIZADA!*%0A%0A📋 *Artículos:* ${encodeURIComponent(items)}%0A💰 *Total:* $${total.toFixed(2)}%0A%0A¡Gracias por tu compra en Frenchies!`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
