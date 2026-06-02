@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <noscript>
+        <div class="noscript-warning">Necesitas habilitar JavaScript para usar esta tienda. Abre este archivo en un navegador moderno con JavaScript activado.</div>
+    </noscript>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo - Reemplaza "logo.jpg" con la ruta de tu imagen -->
+                <div class="logo-container">
+                    <img src="logo de pagina web.jpeg" alt="Logo" class="logo" onerror="this.style.display='none'">
+                </div>
+                <h1> Servicio Tecnico   
+                    de Celulares Frenchies 
+
+                </h1>
+            </div>
+            <button class="cart-toggle" onclick="toggleCart()">
+                🛒 Carrito (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Panel del Carrito (Lateral) -->
+        <aside class="cart-panel" id="cartPanel">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total: $<span id="total-price">0.00</span></p>
+                <button onclick="checkout()" class="btn-checkout">Comprar</button>
+                <button onclick="clearCart()" class="btn-clear">Limpiar Carrito</button>
+            </div>
+        </aside>
+
+        <!-- Sección de Productos -->
+        <section class="products-section">
+            <h2>Catálogo de Productos</h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
